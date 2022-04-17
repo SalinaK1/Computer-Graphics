@@ -119,8 +119,8 @@ def shearing_y_axis(triangle_array,shy):
 def setup():  # initialization and setup
     glutInit()
     glutInitDisplayMode(GLUT_RGBA)
-    glutInitWindowSize(800, 800)
-    glutInitWindowPosition(250, 250)
+    glutInitWindowSize(600, 600)
+    glutInitWindowPosition(300, 300)
     glutCreateWindow("2D Transformation")
     
     glClearColor(0.0,0.0,0.0,0.0)       #Background color of window
@@ -142,7 +142,7 @@ def setup():  # initialization and setup
 
 
 if __name__ == "__main__":
-    userInput = int(input("Enter the transformation you want to perform (Number 1-7).\n 1. Translation\n 2. Rotation\n 3. Scaling\n 4. Reflection about X axis\n 5. Reflection about Y axis\n 6.Shearing about X axis\n 7. Shearing about Y axis.\n => "))
+    userInput = int(input("Enter the transformation you want to perform (Number 1-7).\n 1. Translation\n 2. Rotation\n 3. Scaling\n 4. Reflection about X axis\n 5. Reflection about Y axis\n 6. Shearing about X axis\n 7. Shearing about Y axis.\n => "))
     if userInput == 1:
         tx = int(input("Enter the value of tx: "))
         ty = int(input("Enter the value of ty: "))
