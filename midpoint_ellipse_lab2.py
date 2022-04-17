@@ -87,6 +87,5 @@ if __name__ == "__main__":
         setup()
 
         glutDisplayFunc(lambda: EllipseDA(xc,yc,rx,ry))
-        # glutIdleFunc(lambda: EllipseDA(xc,yc,rx,ry))
         
         glutMainLoop()
